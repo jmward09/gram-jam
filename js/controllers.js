@@ -4,6 +4,7 @@ angular
 	function JamController($http) {
 	    var self = this;
 	    self.foo = "bar";
+	
 	    self.searchInstagram = searchInstagram('', function(data) {
 			                    self.pictures = data.data;
 			                });

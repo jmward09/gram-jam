@@ -6,7 +6,7 @@
 		<script type = "text/javascript" src="js/angular.js"></script>
 		<script type="text/javascript" src="js/angular-dragdrop.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 		
 		<script type="text/javascript" src="js/app.js" defer></script>
 		<script type="text/javascript" src="js/controllers.js" defer></script>
@@ -14,7 +14,7 @@
 	</head>
 	<body ng-controller="JamController as jamCtrl">
 		<div class="img" ng-repeat="picture in jamCtrl.pictures">
-			<img class="img" ng-src="{{picture.images.low_resolution.url}}"> 
+			<img class="img" ng-src="{{picture.images.low_resolution.url}}" ng-click = "jamCtrl.imageBouncing()"> 
 			
 		</div>
 	</body>
