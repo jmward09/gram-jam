@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="jamApp">
+	<head>
+		<title>Welcome to the Gram-Jam</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type = "text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/angular-dragdrop.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+		
+		<script type="text/javascript" src="js/app.js" defer></script>
+		<script type="text/javascript" src="js/controllers.js" defer></script>
+		
+	</head>
+	<body ng-controller="JamController as jamCtrl">
+	{{jamCtrl.foo}}
+	</body>
+</html>
