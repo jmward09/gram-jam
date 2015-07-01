@@ -13,8 +13,9 @@
 		
 	</head>
 	<body ng-controller="JamController as jamCtrl">
+		
 		<div class="img" ng-repeat="picture in jamCtrl.pictures">
-			<img class="img" ng-src="{{picture.images.low_resolution.url}}"> 
+		<a ng-href="{{picture.link}}"><img class="img" ng-src="{{picture.images.low_resolution.url}}" ng-click="jamCtrl.addComment()"> </a>
 			
 		</div>
 	</body>
