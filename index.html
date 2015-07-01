@@ -13,6 +13,9 @@
 		
 	</head>
 	<body ng-controller="JamController as jamCtrl">
-	{{jamCtrl.foo}}
+		<div class="img" ng-repeat="picture in jamCtrl.pictures">
+			<img class="img" ng-src="{{picture.images.low_resolution.url}}"> 
+			
+		</div>
 	</body>
 </html>
