@@ -6,16 +6,20 @@
 		<script type = "text/javascript" src="js/angular.js"></script>
 		<script type="text/javascript" src="js/angular-dragdrop.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 		
 		<script type="text/javascript" src="js/app.js" defer></script>
 		<script type="text/javascript" src="js/controllers.js" defer></script>
 		
 	</head>
+
 	<body ng-controller="JamController as jamCtrl">
+		<h1>Happy Birthday Sophie</h1>
 		
 		<div class="img" ng-repeat="picture in jamCtrl.pictures">
+
 		<a ng-href="{{picture.link}}"><img class="img" ng-src="{{picture.images.low_resolution.url}}" ng-click="jamCtrl.addComment()"> </a>
+
 			
 		</div>
 	</body>
